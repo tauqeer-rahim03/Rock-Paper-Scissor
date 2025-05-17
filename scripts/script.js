@@ -108,9 +108,6 @@ const playGame = (userChoice) => {
             else if (result === "lose") loseSound.play();
         }
 
-        updateScores(result);
-        displayResult(result, userChoice, computerChoice);
-
         if (result === "win") winSound.play();
         else if (result === "lose") loseSound.play();
 
@@ -132,12 +129,18 @@ const playGame = (userChoice) => {
             roundDisplay.textContent = `Round: ${round}`;
             enableChoices();
         }
+
+        updateScores(result);
+        displayResult(result, userChoice, computerChoice);
     }, 1000);
 
     if (round === maxRounds - 1) {
-        document.getElementById("final-round-message").style.visibility =
-            "visible";
+        setTimeout(() => {
+            document.getElementById("final-round-message").style.visibility =
+                "visible";
+        }, 1000);
     }
+
     if (round > maxRounds) return;
 };
 
