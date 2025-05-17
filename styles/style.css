@@ -7,7 +7,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Orbitron", sans-serif;
-    margin-bottom: 20px;
 }
 
 html {
@@ -62,7 +61,6 @@ input[type="number"] {
     border: none;
     margin-right: 10px;
     outline: none;
-    margin-bottom: 0;
 }
 
 button {
@@ -71,7 +69,6 @@ button {
     border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
-    margin-bottom: 0;
 }
 
 #start-button,
@@ -131,7 +128,6 @@ h1 {
 
 .choice i {
     font-size: 3rem;
-    margin-bottom: 0;
 }
 
 .choice:hover {
@@ -164,7 +160,6 @@ h1 {
 
 .move-box i {
     font-size: 3rem;
-    margin-bottom: 0;
 }
 
 #vs {
@@ -255,7 +250,7 @@ h1 {
 
     .choice {
         font-size: 1.8rem;
-        padding: 15px;
+        padding: 24px;
     }
 
     .move-box {
@@ -266,6 +261,12 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    * {
+        margin-bottom: 0px;
+    }
+    body {
+        overflow: scroll;
+    }
     #start-screen {
         width: 90%;
         padding: 20px;
@@ -308,6 +309,10 @@ h1 {
 }
 
 @media (max-width: 480px) {
+    body {
+        height: 100vh;
+        overflow: none;
+    }
     h1 {
         font-size: 1.8rem;
     }
