@@ -145,7 +145,7 @@ h1 {
 
 #round {
     margin-bottom: 20px;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: var(--highlight);
 }
 
@@ -211,7 +211,7 @@ h1 {
     padding: 20px;
     min-width: 150px;
     text-align: center;
-    background-color: #264653;
+    background-color: #111383;
     margin-bottom: 20px;
 }
 
