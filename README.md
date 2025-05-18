@@ -36,7 +36,7 @@ A fun and interactive Rock-Paper-Scissors game built with HTML, CSS, and JavaScr
 
 - Clone the repository:
 
-git clone https://github.com/your-username/rock-paper-scissors.git
+git clone https://github.com/tauqeer-rahim03/Rock-Paper-Scissor/
 
 
 - Open the index.html file in your browser.
