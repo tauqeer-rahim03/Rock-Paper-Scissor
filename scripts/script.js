@@ -112,8 +112,10 @@ const playGame = (userChoice) => {
         else if (result === "lose") loseSound.play();
 
         if (round === maxRounds) {
-            finalOverlay.style.display = "flex";
-            endSound.play();
+            setTimeout(() => {
+                finalOverlay.style.display = "flex";
+                endSound.play();
+            }, 1000);
 
             let finalResult;
             if (userScore > computerScore) finalResult = "win";

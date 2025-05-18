@@ -3,6 +3,7 @@
     --secondary: #ec4899;
     --accent: #8b5cf6;
     --bg-dark: #111827;
+    --highlight: #fbbf24;
 }
 
 * {
@@ -187,6 +188,7 @@ h1 {
 .choice:hover {
     transform: scale(1.1);
     background: rgba(255, 255, 255, 0.2);
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.8);
 }
 
 #result {
@@ -210,6 +212,7 @@ h1 {
     min-width: 150px;
     text-align: center;
     background-color: #264653;
+    margin-bottom: 20px;
 }
 
 .move-box i {
@@ -250,7 +253,9 @@ h1 {
     height: 100vh;
     width: 100vw;
     background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
     z-index: 1000;
+    box-shadow: 4px 4px 30px rgb(255, 255, 255);
 }
 
 #final-message .message {
@@ -260,6 +265,7 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
     max-width: 90%;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 #final-round-message {
